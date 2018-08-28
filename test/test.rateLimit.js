@@ -46,7 +46,7 @@ describe('rate limit', function() {
 
   it('return 429 when exceeding rate limit', function(done) {
     const tasks = []
-    let i = 7
+    var i = 7
 
     while(i--) {
       tasks.push(doRequest())
@@ -80,7 +80,7 @@ describe('rate limit', function() {
 
   it('ensure rate limit is by IP only', function() {
     const tasks = []
-    let i = 7
+    var i = 7
 
     while(i--) {
       tasks.push(doRequest())

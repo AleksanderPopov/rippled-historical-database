@@ -1,3 +1,9 @@
+# kuna update
+
+ - to fill with initial tables run `docker-compose run --rm webapp node import/createTables.js`
+ - to launch app do `docker-compose up` (use `-d` flag for `up` command to detach)
+
+
 # Ripple Data API v2
 
 The Ripple Data API v2 provides access to information about changes in the XRP Ledger, including transaction history and processed analytical data. This information is stored in a dedicated database, which frees `rippled` servers to keep fewer historical ledger versions. The Data API v2 also acts as data source for applications such as [XRP Charts](https://xrpcharts.ripple.com/) and [ripple.com](https://www.ripple.com).
